@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e0994d;
+    font-family: 'Signika', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./imagens/fundo2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+
+header ul {
+
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a:hover {
+    transition:300ms;
+
+}
+
+header ul li a:hover {
+    color: #ffff;
+    text-decoration: underline;
+}
+
+#about {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    
+}
+
+.container .name h5 {
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+    margin-top: 10px;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: none;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0% auto;
+    margin-top: 30px;
+}
+
+.form {
+    width: 40%;
+    margin: 0% auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #975712;
+    color: #ffff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+
+    background-color: #e0994d;
+    color: #ffff;
+}
+
+@media only screen and (max-width:768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container.name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+
+        max-width: 80%;
+        text-align: justify;
+
+    }
+   
+}

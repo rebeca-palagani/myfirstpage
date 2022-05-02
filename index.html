@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Coffice Time</title>
+</head>
+<body>
+    <header>
+        <div>
+
+            <img src="" alt="Logo Coffice Time">
+
+        </div>
+        <ul>
+            <li>
+                <a href="http://www.cofficetime.com">Github</a>
+            </li>
+            <li>
+                <a href="mailto:teste@teste.com">Email</a>
+            </li>
+            <li>
+                <a href="http://www.whatsapp.com">Whatsapp</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div class="name">
+                <h1>Coffice Time</h1>
+                <h5>The best coffee<br>
+                    The best performance
+                </h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow" >
+                <i id="animation" class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+
+            <div  id="about">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Neque esse repudiandae sed ab eligendi error, repellendus possimus corporis. 
+                    Molestiae nemo veritatis quae illo corrupti ex nisi, ipsam nam eius quas!
+                </p>
+            
+            </div>
+            <div>
+                <p>deixe seu contato </p>
+            </div>
+            <div class="form">
+
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+
+            </div>
+        </section>
+        
+        
+    </main>
+    <script>
+
+        function displayAbout() {
+
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+
+    </script>
+</body>
+</html>
